@@ -9,9 +9,14 @@
 }
 
 .logo-container {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
   
 .logo-container h1 {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
   }
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}

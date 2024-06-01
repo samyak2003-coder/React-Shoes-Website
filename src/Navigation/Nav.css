@@ -1,36 +1,45 @@
 nav {
-    display:flex;
-    border-bottom: 2px solid #f3f3f3;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    z-index: 999;
-    margin-left: 2rem;
+  display:flex;
+  position: sticky;
+  height: 100px;
+  border-bottom: 2px solid #f3f3f3;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-left: 2rem;
+  top:0;
+  width:100%;
+  background-color: #fff;
 }
 
 input {
-    padding: 12px 20px;
-    border: none;
-    background: #f7f6f6;
-    outline: none;
-    margin-right: 20px;
-    border-radius: 5px;
-    position: relative;
-    width: 14rem;
-  }
+  padding: 12px 20px;
+  border: none;
+  background: #f7f6f6;
+  outline: none;
+  margin-right: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 14rem;
+}
 
 .nav-icons {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 2rem;
-    color: #000;
-  }
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2rem;
+  color: #000;
+}
 
 
-  .logo-container {
-    margin-bottom: 4rem;
-  }
-  
+.logo-container {
+  margin: 2rem;
+}
+
 .logo-container h1 {
-    margin-top: 1.3rem;
-  }
+  margin-top: 1.3rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit; /* Inherits the color from the parent element */
+}
