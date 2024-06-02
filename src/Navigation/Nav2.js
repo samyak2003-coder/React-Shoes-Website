@@ -13,10 +13,10 @@ const Nav2 = ({ handleInputChange, query }) => {
         </Link>
       </div>
       <div className="profile-container">
-        <a href="/">
+        <a href="/contact">
           <MdOutlinePhoneLocked className="nav-icons" />
         </a>
-        <a href="/">
+        <a href="/cart">
           <AiOutlineShoppingCart className="nav-icons" />
         </a>
         <a href="/login">
