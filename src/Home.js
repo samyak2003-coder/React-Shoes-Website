@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Nav1 from "./Navigation/Nav1";
 import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import products from "./db/data";
 import Card from "./components/Card";
+import ProductView from "./ProductView"; 
 import "./index.css";
 
 const Home = () => {
   const [query, setQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const navigate = useNavigate();
+  const [selectedProduct, setSelectedProduct] = useState(null); 
 
   const handleInputChange = (event) => {
     setQuery(event.target.value);
@@ -23,6 +23,10 @@ const Home = () => {
 
   const handleClick = (event) => {
     setSelectedCategory(event.target.value);
+  };
+
+  const handleCardClick = (title) => {
+    setSelectedProduct(title);
   };
 
   const filteredItems = products.filter(
@@ -57,7 +61,7 @@ const Home = () => {
           reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}
-          cardClick={() => navigate(`/products/${title}`)}
+          cardClick={() => handleCardClick(title)} 
         />
       )
     );
@@ -71,6 +75,7 @@ const Home = () => {
       <Nav1 query={query} handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
       <Products result={result} />
+      {selectedProduct && <ProductView productTitle={selectedProduct} />} 
     </>
   );
 };

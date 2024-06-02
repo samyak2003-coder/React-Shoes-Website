@@ -1,11 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import Nav2 from "./Navigation/Nav2";
 import products from "./db/data";
 import './ProductView.css';  // Import the CSS file
 
-function ProductView() {
-  const { productTitle } = useParams();
+const ProductView = ({ productTitle }) => { // Accept productTitle as a prop
   const product = products.find((p) => p.title === productTitle);
 
   if (!product) {
@@ -33,6 +31,6 @@ function ProductView() {
       </div>
     </>
   );
-}
+};
 
 export default ProductView;

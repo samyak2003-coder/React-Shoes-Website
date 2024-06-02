@@ -1,16 +1,16 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import ProductView from "./ProductView";
-import "./index.css";
+// App.js
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import ProductView from './ProductView';
+import Cart from './Cart';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products/:productTitle" element={<ProductView />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+    </Routes>
   );
 }
 

@@ -18,7 +18,7 @@ const Nav1 = ({ handleInputChange, query }) => {
         <a href="/">
           <MdOutlinePhoneLocked  className="nav-icons" />
         </a>
-        <a href="/">
+        <a href="/cart">
           <AiOutlineShoppingCart className="nav-icons" />
         </a>
         <a href="/">
