@@ -5,7 +5,8 @@ import "./Nav.css";
 const Nav1 = ({ handleInputChange, query }) => {
   return (
     <>
-            <div className="nav-container">
+      <div className="wrapper">
+      <div className="nav-container">
         <input
           className="search-input"
           type="text"
@@ -25,6 +26,8 @@ const Nav1 = ({ handleInputChange, query }) => {
           <AiOutlineUserAdd className="nav-icons" />
         </a>
       </div>
+      </div>
+        
     </>
 
   );

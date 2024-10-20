@@ -1,4 +1,4 @@
-nav {
+.wrapper {
   display:flex;
   position: sticky;
   height: 100px;

@@ -7,7 +7,8 @@ import "./Nav.css";
 const Nav2 = ({ handleInputChange, query }) => {
   return (
     <>
-        <div className='logo-container'>
+      <div className="wrapper">
+      <div className='logo-container'>
         <Link to="/" className="logo-link">
           <h1>Shoes.com</h1>
         </Link>
@@ -23,6 +24,8 @@ const Nav2 = ({ handleInputChange, query }) => {
           <AiOutlineUserAdd className="nav-icons" />
         </a>
       </div>
+      </div>
+        
     </>
   );
 };
